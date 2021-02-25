@@ -6,7 +6,7 @@ export default class User extends Component {
         return (
             <div>
                 <h1>This is User Page</h1>
-                <Guest gprop={this.props.gprop}></Guest>
+                <Guest></Guest>
             </div>
         )
     }
