@@ -7,9 +7,14 @@ export default class Guest extends Component {
             <div>
                 <h1>This is Guest page</h1>
                 <MyContext.Consumer>
-                    {data => <h2>{data}</h2>}
+                    {({ data, handleClick }) => (
+                        <div>
+                            <h2>name : {data.name} Marks: {data.marks}</h2>
+                            <button onClick={handleClick}>Increase Marks</button>
+                        </div>
+                    )}
                 </MyContext.Consumer>
-                
+
             </div>
         )
     }
