@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import User from './User';
-import {Provider} from "./Context";
+import { Provider } from "./Context";
 
 
 export default class App extends Component {
